@@ -105,7 +105,7 @@ while True:
       ball.sety(-290)
       ball.dy *= -1
 
-   if ball.xcor() > 390:
+   if ball.xcor() > 380:
       ball.goto(0,0)
       ball.dx *= -1  
       score_a +=1
@@ -113,7 +113,7 @@ while True:
       pen.write("Red Team:{}          Blue Team:{} " .format(score_a, score_b), align="center", font = ("Courier", 20, "bold"))
 
 
-   if ball.xcor() < -390:
+   if ball.xcor() < -380:
       ball.goto(0,0)
       ball.dx *= -1  
       score_b +=1
